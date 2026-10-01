@@ -1,0 +1,269 @@
+/* ===========================
+   BudgetBuddy Register Page
+   Developed by Eram Khan
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#EEF7FF,#F8FBFF);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* Background Blur */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:#3B82F620;
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-100px;
+
+    filter:blur(45px);
+
+}
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:#10B98120;
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    right:-100px;
+
+    filter:blur(45px);
+
+}
+
+/* Register Card */
+
+.register-box{
+
+    width:420px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.register-box h1{
+
+    color:#1E3A8A;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.register-box p{
+
+    text-align:center;
+
+    color:#64748B;
+
+    margin-bottom:30px;
+
+}
+
+/* Inputs */
+
+form input,
+form select,
+form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:18px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(37,99,235,.25);
+
+}
+
+/* Login Link */
+
+.login-link{
+
+    margin-top:25px;
+
+    text-align:center;
+
+}
+
+.login-link a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    width:100%;
+
+    background:#1E3A8A;
+
+    padding:18px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:20px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#BFDBFE;
+
+}

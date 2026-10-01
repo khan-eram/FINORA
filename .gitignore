@@ -1,0 +1,28 @@
+# Debug and log files
+*.log
+debug.log
+
+# Environment / secret files
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+
+# Executable files
+*.exe
+
+# User-uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# Local test file
+test.php

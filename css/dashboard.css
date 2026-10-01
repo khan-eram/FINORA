@@ -1,0 +1,181 @@
+body{
+    background:#f4f7fc;
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+    background:#ffffff;
+    margin-top:30px;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.hero h2{
+    font-weight:700;
+    color:#2c3e50;
+}
+
+.hero p{
+    color:#6c757d;
+    margin-bottom:0;
+}
+
+.card{
+    border:none;
+    border-radius:18px;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-body{
+    padding:30px;
+}
+
+.card h2{
+    font-size:32px;
+    font-weight:700;
+}
+
+.card h5{
+    font-weight:600;
+}
+
+.income-card{
+    border-top:6px solid #198754;
+}
+
+.expense-card{
+    border-top:6px solid #dc3545;
+}
+
+.balance-card{
+    border-top:6px solid #0d6efd;
+}
+
+.add-btn{
+    margin-top:35px;
+}
+
+.add-btn{
+    margin-top:40px;
+    text-align:center;
+}
+
+.add-btn .btn{
+    padding:15px 40px;
+    font-size:20px;
+    font-weight:600;
+    border-radius:12px;
+    background:#0d6efd;
+    border:none;
+    transition:0.3s;
+    box-shadow:0 6px 15px rgba(13,110,253,0.3);
+}
+
+.add-btn .btn:hover{
+    background:#0b5ed7;
+    transform:translateY(-3px);
+}
+
+/*=====================================
+        FINORA DASHBOARD NAVBAR
+======================================*/
+
+.dashboard-navbar{
+    width:92%;
+    height:78px;
+
+    margin:25px auto;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    position:sticky;
+    top:20px;
+    z-index:999;
+}
+
+/* Logo */
+
+.dashboard-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.dashboard-logo img{
+    width:44px;
+    height:44px;
+    object-fit:contain;
+}
+
+.dashboard-logo span{
+    font-size:28px;
+    font-weight:700;
+    color:#2563EB;
+}
+
+/* Center Links */
+
+.dashboard-links{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.dashboard-links a{
+    text-decoration:none;
+    color:#64748B;
+    font-weight:600;
+    padding:12px 18px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.dashboard-links a:hover{
+    background:#EEF4FF;
+    color:#2563EB;
+    transform:translateY(-2px);
+}
+
+.dashboard-links a.active{
+    background:#2563EB;
+    color:#fff;
+}
+
+/* Right Side */
+
+.dashboard-right{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    min-width:140px;
+}
+
+.logout-btn{
+    background:#EF4444;
+    color:#fff !important;
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#DC2626;
+    transform:translateY(-2px);
+}

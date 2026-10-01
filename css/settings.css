@@ -1,0 +1,294 @@
+/* ======================================
+   FINORA SETTINGS
+====================================== */
+
+.settings-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+
+/* HEADER */
+
+.settings-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.settings-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #EFF6FF;
+
+    font-size: 30px;
+}
+
+.settings-header h1 {
+    margin: 0;
+
+    color: #0F172A;
+
+    font-size: 30px;
+}
+
+.settings-header p {
+    margin: 5px 0 0;
+
+    color: #64748B;
+}
+
+
+/* MAIN CARD */
+
+.settings-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 10px 30px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+/* SECTION */
+
+.settings-section {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 28px 5px;
+}
+
+.settings-section-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F8FAFC;
+
+    border-radius: 12px;
+
+    font-size: 21px;
+}
+
+.settings-section-content {
+    flex: 1;
+}
+
+.settings-section-content h2 {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #0F172A;
+}
+
+.settings-section-content p {
+    margin: 6px 0 18px;
+
+    color: #64748B;
+
+    font-size: 14px;
+}
+
+
+/* DIVIDER */
+
+.settings-divider {
+    height: 1px;
+
+    background: #E2E8F0;
+}
+
+
+/* THEME BUTTONS */
+
+.theme-options {
+    display: flex;
+
+    gap: 10px;
+}
+
+.theme-btn {
+    padding: 9px 18px;
+
+    border: 1px solid #E2E8F0;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #475569;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.theme-btn.active {
+    background: #2563EB;
+
+    border-color: #2563EB;
+
+    color: white;
+}
+
+
+/* NOTIFICATION TOGGLE */
+
+.toggle-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 500px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.toggle-row input {
+    display: none;
+}
+
+.toggle-slider {
+    width: 46px;
+    height: 25px;
+
+    background: #CBD5E1;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.toggle-slider::after {
+    content: "";
+
+    position: absolute;
+
+    width: 19px;
+    height: 19px;
+
+    top: 3px;
+    left: 3px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    transition: 0.2s;
+}
+
+.toggle-row input:checked + .toggle-slider {
+    background: #2563EB;
+}
+
+.toggle-row input:checked + .toggle-slider::after {
+    transform: translateX(21px);
+}
+
+
+/* ACTION BUTTON */
+
+.settings-action-btn {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 9px;
+
+    background: #2563EB;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.settings-action-btn:hover {
+    transform: translateY(-1px);
+}
+
+.settings-action-btn.secondary {
+    background: #F1F5F9;
+
+    color: #334155;
+}
+
+/* ======================================
+   MOBILE
+====================================== */
+
+@media (max-width: 600px) {
+
+    .settings-page {
+        margin: 25px auto;
+
+        padding: 0 15px;
+    }
+
+    .settings-header {
+        gap: 14px;
+    }
+
+    .settings-icon {
+        width: 55px;
+        height: 55px;
+
+        font-size: 25px;
+    }
+
+    .settings-header h1 {
+        font-size: 24px;
+    }
+
+    .settings-card {
+        padding: 5px 20px;
+    }
+
+    .settings-section {
+        gap: 14px;
+
+        padding: 23px 0;
+    }
+
+    .settings-section-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .theme-options {
+        flex-wrap: wrap;
+    }
+
+}

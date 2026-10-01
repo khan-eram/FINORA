@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.report-container{
+    max-width:900px;
+    margin:30px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.report-container h2{
+    text-align:center;
+    color:#0d6efd;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.report-container p{
+    text-align:center;
+    color:#666;
+    margin:8px 0 25px;
+}
+
+.chart-card{
+    width:420px;
+    margin:30px auto;
+}
+
+.chart-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.25);
+}
+
+.summary-card{
+    display:flex;
+    gap:15px;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.item{
+    flex:1;
+    border-radius:12px;
+    padding:18px;
+    text-align:center;
+    color:white;
+    transition:0.3s;
+}
+
+.item:hover{
+    transform:translateY(-5px);
+}
+
+.item h4{
+    margin-bottom:8px;
+    color:#555;
+    font-size:18px;
+}
+
+.item p{
+    margin:0;
+    font-size:22px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+.income-card{
+    background:#198754;
+}
+
+.expense-card{
+    background:#dc3545;
+}
+
+.balance-card{
+    background:#0d6efd;
+}
+
+.item h4{
+    color:white;
+    margin-bottom:10px;
+}
+
+.item p{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}

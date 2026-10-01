@@ -1,0 +1,143 @@
+/* ==============================
+   BudgetBuddy - View Transactions
+   Developed by Eram Khan
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.transaction-box{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.transaction-box h1{
+    color:#0d6efd;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.transaction-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.search-box input,
+.search-box select{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.search-box button{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#0b5ed7;
+}
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    min-width:900px;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#0d6efd;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:14px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+table tr:hover{
+    background:#f8f9fa;
+}
+
+.edit-btn,
+.delete-btn{
+    text-decoration:none;
+    color:white;
+    padding:8px 14px;
+    border-radius:6px;
+    font-size:14px;
+    margin:2px;
+    display:inline-block;
+}
+
+.edit-btn{
+    background:#198754;
+}
+
+.edit-btn:hover{
+    background:#157347;
+}
+
+.delete-btn{
+    background:#dc3545;
+}
+
+.delete-btn:hover{
+    background:#bb2d3b;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:25px;
+    text-decoration:none;
+    background:#6c757d;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#5c636a;
+}
+.table-responsive{
+    overflow-x: auto;
+}
+.table-responsive{
+    overflow-x: auto;
+}
